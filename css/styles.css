@@ -1,0 +1,27 @@
+body {
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+#imageGallery {
+  list-style: none;
+  max-width: 1200px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.img-gallery {
+  display: block;
+  width: 200px;
+}
+
+.is-active {
+  border: 2px solid red;
+  border-radius: 20px;
+}
