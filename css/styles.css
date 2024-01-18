@@ -25,3 +25,17 @@ ul {
   border: 2px solid red;
   border-radius: 20px;
 }
+
+.eventHeader {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.eventHeader:hover,
+.eventHeader:focus {
+  color: blue;
+}
+
+.no-active {
+  visibility: hidden;
+}
