@@ -39,3 +39,9 @@ ul {
 .no-active {
   visibility: hidden;
 }
+
+.btn {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: transparent;
+}
