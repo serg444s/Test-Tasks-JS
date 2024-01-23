@@ -21,20 +21,28 @@
 const taskList = document.querySelector("#eventList");
 
 function onTaskClick(event) {
-  if (event.target.nodeName !== "DIV") {
+  if (event.target.nodeName !== "H2") {
     return;
   }
 
   const currentText = event.target.nextElementSibling;
   const allText = document.querySelectorAll(".text");
+  const imgEl = document.querySelector(".image");
+  const imgAll = document.querySelectorAll(".image");
 
   if (currentText.classList.contains("no-active")) {
     allText.forEach((element) => {
       element.classList.add("no-active");
-      currentText.classList.remove("no-active");
     });
+    currentText.classList.remove("no-active");
+
+    imgAll.forEach((img) => {
+      img.classList.add("no-active");
+    });
+    currentText.nextElementSibling.classList.remove("no-active");
   } else {
     currentText.classList.add("no-active");
+    currentText.nextElementSibling.classList.add("no-active");
   }
 }
 
